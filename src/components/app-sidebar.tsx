@@ -45,7 +45,7 @@ const data = {
     },
     {
       title: "Windows",
-      url: "/windows",
+      url: "/windows/10",
       icon: IconBrandWindowsFilled,
     },
     {

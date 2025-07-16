@@ -1,11 +1,6 @@
-import React from 'react'
+import React from "react";
+import AndroidPage from "./v9/index";
 
-const index = () => {
-  return (
-    <div>
-      Androi
-    </div>
-  )
+export default function Index() {
+  return <AndroidPage />;
 }
-
-export default index

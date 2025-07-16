@@ -63,11 +63,7 @@ export default function LinuxHomePage() {
               </div>
             </div>
 
-            <Link href="/">
-              <Button className="bg-slate-800 hover:bg-slate-700 text-white">
-                Volver a Inicio
-              </Button>
-            </Link>
+            
           </div>
         </div>
       </header>

@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import CatalinaPage from "./Catalina";
 
-export default function index() {
-  return (
-    <div>Mac Os</div>
-  )
+export default function Index() {
+  return <CatalinaPage />;
 }

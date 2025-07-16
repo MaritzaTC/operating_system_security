@@ -6,9 +6,9 @@ import Image from "next/image"
 
 export default function Metasploitable2Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-slate-700 bg-slate-900/50 backdrop-blur-sm">
+      <header className="border-b border-gray-300 bg-gray-50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center gap-4">
             <Button
@@ -24,8 +24,8 @@ export default function Metasploitable2Page() {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-white">Reporte: Análisis de Vulnerabilidades en Metasploitable 2</h1>
-                <p className="text-slate-400 text-sm">Evaluación completa de penetration testing en entorno controlado</p>
+                <h1 className="text-xl font-bold text-gray-900">Reporte: Análisis de Vulnerabilidades en Metasploitable 2</h1>
+                <p className="text-gray-600 text-sm">Evaluación completa de penetration testing en entorno controlado</p>
               </div>
             </div>
           </div>
@@ -34,12 +34,12 @@ export default function Metasploitable2Page() {
 
       <div className="container mx-auto px-4 py-8">
         {/* Overview */}
-        <Card className="bg-slate-800/50 border-slate-700 mb-8">
+        <Card className="bg-white border-gray-300 mb-8">
           <CardHeader>
             <div className="flex items-start justify-between">
               <div>
-                <CardTitle className="text-white text-2xl mb-2">Metasploitable 2</CardTitle>
-                <CardDescription className="text-slate-300 text-base">
+                <CardTitle className="text-gray-900 text-2xl mb-2">Metasploitable 2</CardTitle>
+                <CardDescription className="text-gray-700 text-base">
                   Metasploitable 2 es una máquina virtual Linux intencionalmente vulnerable, diseñada para la práctica
                   de técnicas de penetration testing y evaluación de seguridad.
                 </CardDescription>
@@ -52,8 +52,8 @@ export default function Metasploitable2Page() {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div>
-                <span className="text-slate-400">Sistema Operativo:</span>
-                <p className="text-white font-medium">Ubuntu 8.04</p>
+                <span className="text-gray-600">Sistema Operativo:</span>
+                <p className="text-gray-900 font-medium">Ubuntu 8.04</p>
               </div>
             </div>
           </CardContent>
@@ -63,45 +63,45 @@ export default function Metasploitable2Page() {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Introducción de la Máquina Virtual */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white flex items-center gap-2">
+                <CardTitle className="text-gray-900 flex items-center gap-2">
                   <Monitor className="w-5 h-5" />
                   Introducción: Configuración del Entorno de Pruebas
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     Metasploitable 2 es una máquina virtual Linux basada en Ubuntu 8.04, desarrollada por Rapid7
                     como plataforma de entrenamiento para técnicas de penetration testing. Esta distribución
                     contiene múltiples vulnerabilidades conocidas que permiten practicar diferentes vectores
                     de ataque en un entorno controlado y legal.
                   </p>
                   
-                  <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
-                    <h4 className="text-white font-medium mb-3">Configuración del Laboratorio:</h4>
+                  <div className="bg-gray-100 rounded-lg p-4 border border-gray-200">
+                    <h4 className="text-gray-900 font-medium mb-3">Configuración del Laboratorio:</h4>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                       <div className="space-y-1">
-                        <p className="text-slate-400">Máquina Objetivo:</p>
-                        <p className="text-white">Metasploitable 2 (192.168.101.21)</p>
+                        <p className="text-gray-600">Máquina Objetivo:</p>
+                        <p className="text-gray-900">Metasploitable 2 (192.168.101.21)</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-slate-400">Máquina Atacante:</p>
-                        <p className="text-white">Kali Linux (192.168.101.26)</p>
+                        <p className="text-gray-600">Máquina Atacante:</p>
+                        <p className="text-gray-900">Kali Linux (192.168.101.26)</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-slate-400">Red Virtual:</p>
-                        <p className="text-white">192.168.101.0/24</p>
+                        <p className="text-gray-600">Red Virtual:</p>
+                        <p className="text-gray-900">192.168.101.0/24</p>
                       </div>
                       <div className="space-y-1">
-                        <p className="text-slate-400">Conectividad:</p>
-                        <p className="text-white">Bridged Network</p>
+                        <p className="text-gray-600">Conectividad:</p>
+                        <p className="text-gray-900">Bridged Network</p>
                       </div>
                     </div>
                   </div>
                   
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-gray-700 text-sm leading-relaxed">
                     El entorno de laboratorio está diseñado para ser completamente aislado, permitiendo la
                     ejecución segura de exploits y técnicas de pentesting sin riesgo para sistemas de
                     producción. La configuración de red facilita la comunicación entre atacante y víctima
@@ -112,9 +112,9 @@ export default function Metasploitable2Page() {
             </Card>
 
             {/* Objetivos */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white flex items-center gap-2">
+                <CardTitle className="text-gray-900 flex items-center gap-2">
                   <Target className="w-5 h-5" />
                   Objetivos del Análisis
                 </CardTitle>
@@ -129,7 +129,7 @@ export default function Metasploitable2Page() {
                     "Evaluar la efectividad de diferentes métodos de ataque",
                     "Demostrar escalamiento de privilegios"
                   ].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2 text-slate-300">
+                    <li key={idx} className="flex items-center gap-2 text-gray-700">
                       <div className="w-2 h-2 bg-red-500 rounded-full" />
                       {item}
                     </li>
@@ -139,9 +139,9 @@ export default function Metasploitable2Page() {
             </Card>
 
             {/* Procedimiento Paso a Paso */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white">Procedimiento de Pentesting</CardTitle>
+                <CardTitle className="text-gray-900">Procedimiento de Pentesting</CardTitle>
               </CardHeader>
               <CardContent className="space-y-8">
                 {[
@@ -288,24 +288,24 @@ export default function Metasploitable2Page() {
 
                   return (
                     <div key={index} className="space-y-3">
-                      <h4 className={`text-lg font-semibold ${isCritical ? "text-red-400" : "text-white"}`}>
+                      <h4 className={`text-lg font-semibold ${isCritical ? "text-red-600" : "text-gray-900"}`}>
                         {step.title}
                       </h4>
-                      <p className="text-slate-300 text-sm">{step.description}</p>
+                      <p className="text-gray-700 text-sm">{step.description}</p>
                       {step.command && (
-                        <div className="bg-slate-900 rounded-lg p-3 border border-slate-600 w-fit">
-                          <code className="text-red-400 text-sm font-mono">{step.command}</code>
+                        <div className="bg-gray-100 rounded-lg p-3 border border-gray-200 w-fit">
+                          <code className="text-red-600 text-sm font-mono">{step.command}</code>
                         </div>
                       )}
-                      <div className="bg-slate-700 rounded-lg p-4 text-center space-y-2">
+                      <div className="bg-gray-100 rounded-lg p-4 text-center space-y-2 border border-gray-200">
                         <Image
                                                 src={step.imageSrc}
                                                 alt={step.imageText}
                                                 width={600}
                                                 height={300}
-                                                className="mx-auto rounded-md border border-slate-600"
+                                                className="mx-auto rounded-md border border-gray-300"
                                               />
-                        <p className="text-slate-400 text-xs">{step.imageText}</p>
+                        <p className="text-gray-600 text-xs">{step.imageText}</p>
                       </div>
                     </div>
                   );
@@ -314,9 +314,9 @@ export default function Metasploitable2Page() {
             </Card>
 
             {/* Conclusiones */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white flex items-center gap-2">
+                <CardTitle className="text-gray-900 flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
                   Conclusiones y Análisis de Resultados
                 </CardTitle>
@@ -324,63 +324,63 @@ export default function Metasploitable2Page() {
               <CardContent>
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-white font-medium mb-2">Vectores de Ataque Exitosos:</h4>
-                    <ul className="space-y-2 text-slate-300 text-sm">
+                    <h4 className="text-gray-900 font-medium mb-2">Vectores de Ataque Exitosos:</h4>
+                    <ul className="space-y-2 text-gray-700 text-sm">
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
                         <span><strong>FTP vsftpd 2.3.4:</strong> Backdoor explotado exitosamente para obtener shell root directo</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
                         <span><strong>VNC:</strong> Acceso sin autenticación permitió control total del escritorio remoto</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
                         <span><strong>PostgreSQL:</strong> Configuración insegura permitió ejecución de código y sesión Meterpreter</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
                         <span><strong>Apache Tomcat:</strong> Credenciales por defecto comprometieron el servidor de aplicaciones</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
                         <span><strong>Telnet:</strong> Protocolo inseguro con credenciales débiles facilitó acceso remoto</span>
                       </li>
                     </ul>
                   </div>
 
                   <div>
-                    <h4 className="text-white font-medium mb-2">Evaluación de Herramientas:</h4>
-                    <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
+                    <h4 className="text-gray-900 font-medium mb-2">Evaluación de Herramientas:</h4>
+                    <div className="bg-gray-100 rounded-lg p-4 border border-gray-200">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                         <div>
-                          <p className="text-red-400 font-medium">Metasploit Framework</p>
-                          <p className="text-slate-300">Herramienta principal para explotación automatizada y post-explotación</p>
+                          <p className="text-red-600 font-medium">Metasploit Framework</p>
+                          <p className="text-gray-700">Herramienta principal para explotación automatizada y post-explotación</p>
                         </div>
                         <div>
-                          <p className="text-red-400 font-medium">Nmap</p>
-                          <p className="text-slate-300">Fundamental para enumeración inicial y identificación de servicios</p>
+                          <p className="text-red-600 font-medium">Nmap</p>
+                          <p className="text-gray-700">Fundamental para enumeración inicial y identificación de servicios</p>
                         </div>
                         <div>
-                          <p className="text-red-400 font-medium">VNC Viewer</p>
-                          <p className="text-slate-300">Acceso gráfico remoto para análisis visual del sistema</p>
+                          <p className="text-red-600 font-medium">VNC Viewer</p>
+                          <p className="text-gray-700">Acceso gráfico remoto para análisis visual del sistema</p>
                         </div>
                         <div>
-                          <p className="text-red-400 font-medium">Clientes FTP/Telnet</p>
-                          <p className="text-slate-300">Herramientas básicas para validación de acceso y exploración</p>
+                          <p className="text-red-600 font-medium">Clientes FTP/Telnet</p>
+                          <p className="text-gray-700">Herramientas básicas para validación de acceso y exploración</p>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="text-white font-medium mb-2">Impacto y Severidad:</h4>
-                    <div className="bg-slate-900 rounded-lg p-4 border border-slate-600 mb-4">
+                    <h4 className="text-gray-900 font-medium mb-2">Impacto y Severidad:</h4>
+                    <div className="bg-gray-100 rounded-lg p-4 border border-gray-200 mb-4">
                       <div className="flex items-center gap-2 mb-2">
                         <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                        <span className="text-red-400 font-medium">CRÍTICO</span>
+                        <span className="text-red-600 font-medium">CRÍTICO</span>
                       </div>
-                      <p className="text-slate-300 text-sm">
+                      <p className="text-gray-700 text-sm">
                         Múltiples vectores de ataque permitieron comprometer completamente el sistema objetivo.
                         Se obtuvo acceso root a través de al menos 4 servicios diferentes, demostrando una
                         superficie de ataque extremadamente amplia.
@@ -389,41 +389,41 @@ export default function Metasploitable2Page() {
                   </div>
 
                   <div>
-                    <h4 className="text-white font-medium mb-2">Recomendaciones de Mitigación:</h4>
-                    <ul className="space-y-2 text-slate-300 text-sm">
+                    <h4 className="text-gray-900 font-medium mb-2">Recomendaciones de Mitigación:</h4>
+                    <ul className="space-y-2 text-gray-700 text-sm">
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Actualizar inmediatamente vsftpd a una versión sin backdoor conocido</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Configurar autenticación robusta en VNC y limitar acceso por IP</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Deshabilitar Telnet y migrar a SSH con autenticación por clave</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Cambiar credenciales por defecto en PostgreSQL y Tomcat</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Implementar segmentación de red y firewall con reglas restrictivas</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
                         <span>Establecer monitoreo continuo y sistemas de detección de intrusiones</span>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-slate-900 rounded-lg p-4 border border-slate-600">
+                  <div className="bg-gray-100 rounded-lg p-4 border border-gray-200">
                     <div className="flex items-center gap-2 mb-2">
-                      <Info className="w-4 h-4 text-blue-400" />
-                      <span className="text-white font-medium">Contexto Educativo</span>
+                      <Info className="w-4 h-4 text-blue-600" />
+                      <span className="text-gray-900 font-medium">Contexto Educativo</span>
                     </div>
-                    <p className="text-slate-300 text-sm">
+                    <p className="text-gray-700 text-sm">
                       Metasploitable 2 está diseñado intencionalmente para ser vulnerable con fines educativos.
                       Las múltiples vulnerabilidades identificadas representan casos de estudio reales de
                       problemas de seguridad comunes en sistemas empresariales. Este análisis demuestra la
@@ -438,9 +438,9 @@ export default function Metasploitable2Page() {
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Herramientas */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white text-lg">Herramientas Utilizadas</CardTitle>
+                <CardTitle className="text-gray-900 text-lg">Herramientas Utilizadas</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
@@ -454,7 +454,7 @@ export default function Metasploitable2Page() {
                     <Badge
                       key={tool}
                       variant="outline"
-                      className="text-slate-300 border-slate-600"
+                      className="text-gray-700 border-gray-400"
                     >
                       {tool}
                     </Badge>
@@ -464,9 +464,9 @@ export default function Metasploitable2Page() {
             </Card>
 
             {/* Vulnerabilidades */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white text-lg flex items-center gap-2">
+                <CardTitle className="text-gray-900 text-lg flex items-center gap-2">
                   <AlertTriangle className="w-4 h-4" />
                   Vulnerabilidades Identificadas
                 </CardTitle>
@@ -481,17 +481,17 @@ export default function Metasploitable2Page() {
                 ].map((vuln, index) => (
                   <div
                     key={index}
-                    className="border border-slate-600 rounded-lg p-3"
+                    className="border border-gray-200 rounded-lg p-3"
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <span className="text-white text-sm font-medium">{vuln.name}</span>
+                      <span className="text-gray-900 text-sm font-medium">{vuln.name}</span>
                       <Badge 
                         variant="outline" 
                         className={`text-xs ${
-                          vuln.severity === 'Crítica' ? 'text-red-400 border-red-400' : 
-                          vuln.severity === 'Alta' ? 'text-orange-400 border-orange-400' :
-                          vuln.severity === 'Media' ? 'text-yellow-400 border-yellow-400' : 
-                          'text-green-400 border-green-400'
+                          vuln.severity === 'Crítica' ? 'text-red-600 border-red-600' : 
+                          vuln.severity === 'Alta' ? 'text-orange-600 border-orange-600' :
+                          vuln.severity === 'Media' ? 'text-yellow-600 border-yellow-600' : 
+                          'text-green-600 border-green-600'
                         }`}
                       >
                         {vuln.severity}
@@ -503,103 +503,96 @@ export default function Metasploitable2Page() {
             </Card>
 
             {/* Resumen Estadístico */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white text-lg">Resumen del Análisis</CardTitle>
+                <CardTitle className="text-gray-900 text-lg">Resumen del Análisis</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Servicios Analizados:</span>
-                    <span className="text-white">5</span>
+                    <span className="text-gray-600">Servicios Analizados:</span>
+                    <span className="text-gray-900">5</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Vulnerabilidades:</span>
-                    <span className="text-red-400">5</span>
+                    <span className="text-gray-600">Vulnerabilidades:</span>
+                    <span className="text-red-600">5</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Exploits Exitosos:</span>
-                    <span className="text-red-400">4</span>
+                    <span className="text-gray-600">Exploits Exitosos:</span>
+                    <span className="text-red-600">4</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Shells Obtenidos:</span>
-                    <span className="text-red-400">3</span>
+                    <span className="text-gray-600">Shells Obtenidos:</span>
+                    <span className="text-red-600">3</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Tiempo de Compromiso:</span>
-                    <span className="text-white">~2 horas</span>
+                    <span className="text-gray-600">Tiempo de Compromiso:</span>
+                    <span className="text-gray-900">~2 horas</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-slate-400">Nivel de Acceso:</span>
-                    <span className="text-red-400">Root</span>
+                    <span className="text-gray-600">Nivel de Acceso:</span>
+                    <span className="text-red-600">Root</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Metodología OWASP */}
-            <Card className="bg-slate-800/50 border-slate-700">
+            <Card className="bg-white border-gray-300">
               <CardHeader>
-                <CardTitle className="text-white text-lg">Metodología Aplicada</CardTitle>
+                <CardTitle className="text-gray-900 text-lg">Metodología Aplicada</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-slate-300">Reconocimiento</span>
+                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <span className="text-gray-700">Reconocimiento</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-slate-300">Enumeración</span>
+                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <span className="text-gray-700">Enumeración</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-slate-300">Explotación</span>
+                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <span className="text-gray-700">Explotación</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-slate-300">Post-explotación</span>
+                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <span className="text-gray-700">Post-explotación</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-400 rounded-full" />
-                    <span className="text-slate-300">Documentación</span>
+                    <div className="w-2 h-2 bg-green-600 rounded-full" />
+                    <span className="text-gray-700">Documentación</span>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
             {/* Recomendaciones de Seguimiento */}
-            <Card className="bg-slate-800/50 border-slate-700">
-              <CardHeader>
-                <CardTitle className="text-white text-lg">
-                  Recomendaciones de Seguimiento
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-slate-300">
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
-                    <span>Reforzar políticas de contraseñas y autenticación multifactor en todos los servicios expuestos.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
-                    <span>Implementar escaneos periódicos de vulnerabilidades internas y externas.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
-                    <span>Aplicar actualizaciones y parches de seguridad de forma proactiva.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
-                    <span>Capacitar al equipo de TI en respuesta ante incidentes y análisis forense.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0" />
-                    <span>Simular ataques regularmente mediante ejercicios de Red Team / Blue Team.</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+              <Card className="bg-white border border-slate-200">
+                <CardHeader>
+                  <CardTitle className="text-slate-900 text-lg">
+                    Recomendaciones de Seguimiento
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm text-slate-700">
+                    {[
+                      "Reforzar políticas de contraseñas y autenticación multifactor en todos los servicios expuestos.",
+                      "Implementar escaneos periódicos de vulnerabilidades internas y externas.",
+                      "Aplicar actualizaciones y parches de seguridad de forma proactiva.",
+                      "Capacitar al equipo de TI en respuesta ante incidentes y análisis forense.",
+                      "Simular ataques regularmente mediante ejercicios de Red Team / Blue Team."
+                    ].map((text, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0" />
+                        <span>{text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
           </div>
         </div>
       </div>

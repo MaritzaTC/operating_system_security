@@ -57,6 +57,11 @@ const data = {
       url: "/linux",
       icon: IconBrandDebian,
     },
+    {
+      title: "Reporte(PDF)",
+      url: "/sistemas operativos - Reporte tecnico.docx.pdf",
+      icon: IconBrandDebian,
+    },
     
   ],
  

@@ -202,7 +202,7 @@ Evaluación de escalada de privilegios, rootkits, denegación de servicio, inyec
   </ul>
 
   <h3 className="text-xl font-semibold mt-6">Casos de Prueba y Resultados</h3>
-  <p>Puedes mostrar los casos en una tabla como esta:</p>
+ 
 
   <table className="table-auto w-full text-sm text-left border-collapse border border-gray-300 mt-4">
     <thead className="bg-gray-200">
